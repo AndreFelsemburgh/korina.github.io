@@ -1,0 +1,104 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.fundo-preto {
+  background: #322C2C;
+  padding: 40px 20px; 
+  min-width: 287px;
+}
+
+.header img {
+  border-radius: 50%;
+  border: 20px solid black;
+}
+
+
+.header .nome {
+  font-size: 6rem;
+  line-height: 0.9;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  letter-spacing: 7px;
+  color: #322c2c;
+}
+
+.header .sobrenome {
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 10px;
+  color: #322c2c;
+}
+
+.header .profissao {
+  font-size: 2.5rem;
+  font-weight: 200;
+  padding-left: 20px;
+  letter-spacing: 4px;
+  color: #322C2C;
+}
+
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .header {
+    gap: 0px;
+  }
+
+  .header .nome {
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    letter-spacing: 0px;
+    color: #322c2c;
+  }
+
+  .header .sobrenome {
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #322c2c;
+  }
+
+  .header .profissao {
+  font-size: 2rem;
+  font-weight: 200;
+  padding-left: 20px;
+  letter-spacing: 2px;
+  color: #322C2C;
+}
+}
+
+
+
+@media (max-width: 500px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+  }
+  
+  .nome_profissao {
+    grid-row: 1;
+    padding: 30px 0;
+  }
+  
+  .header .nome {
+    font-size: 5rem;
+    letter-spacing: 5px;;
+  }
+
+  .header .sobrenome {
+    font-size: 5rem;
+  }
+
+  .header .profissao {
+    font-size: 2rem;
+  }
+}

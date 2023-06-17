@@ -1,0 +1,37 @@
+/* CORES
+PRETO -- #322C2C
+VERDE -- #03989E 
+Borda da foto -- #271E1E  
+*/
+
+/*
+Fontes
+Korina Vilanueva -- Open Sans
+titulos - Public Sans Bold
+textos - Lati
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'open sans', arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
